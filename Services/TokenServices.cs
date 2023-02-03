@@ -31,7 +31,6 @@ public  class TokenService
         public static string WriteToken(SecurityToken token) =>
             new JwtSecurityTokenHandler().WriteToken(token);
     
-// פונקציה שמפענחת ID מתוקן
                    
       
         public static int decode(String st)

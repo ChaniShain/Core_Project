@@ -75,13 +75,10 @@ namespace TodoList.Controllers
         {
             if (id != t.Id)
                 return BadRequest();
-            //    
-            // var res = TodoService.Get(id);
-            // if (res is null)
-            //     return NotFound();
+           
             TodoService.Update(t);
             return NoContent();
-            // 
+          
 
         }
 

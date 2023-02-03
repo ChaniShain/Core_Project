@@ -12,7 +12,6 @@ namespace TodoList.Services
 {
     public class TodoService : ITodoService 
     {
-        //  List<list>? tasks { get; }
         List<Mylist>? tasks { get; }
 
         private IWebHostEnvironment webHost;
@@ -51,9 +50,7 @@ namespace TodoList.Services
             if (tasks != null)
             {
                 b.Id =tasks[tasks.Count-1].Id+1 ;
-                //. tasks.Count() + 1;
                 b.Isdone=false;
-                // b.UserId=
                 tasks.Add(b);
                 saveToFile();
             }

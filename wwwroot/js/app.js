@@ -56,7 +56,6 @@ function getItems() {
         .then((response) => response.json())
 
         .then(result => {
-            // alert(result[0].userId),
             _displayItems(result);
         })
         .catch(error => console.log('error', error));
@@ -64,7 +63,6 @@ function getItems() {
 
 
 function _displayItems(data) {
-    // alert(data[0].userId);
     const tBody = document.getElementById('tasks');
     tBody.innerHTML = '';
     _displayCount(data.length);
@@ -201,7 +199,6 @@ function getAllUsers() {
         .then((response) => response.json())
 
         .then(result => {
-            //  alert(result),
             _displayUsers(result);
         })
         .catch(error => alert('You do not have permission for this action', error));
